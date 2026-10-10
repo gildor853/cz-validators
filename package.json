@@ -1,0 +1,81 @@
+{
+  "name": "cz-validators",
+  "version": "1.0.0",
+  "description": "Zero-dependency TypeScript validators for Czech identifiers: I\u010cO, DI\u010c, rodn\u00e9 \u010d\u00edslo, bank account numbers (with \u010cNB bank codes and IBAN conversion), IBAN and PS\u010c.",
+  "author": "Gildor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gildor853/cz-validators.git"
+  },
+  "homepage": "https://github.com/gildor853/cz-validators#readme",
+  "bugs": {
+    "url": "https://github.com/gildor853/cz-validators/issues"
+  },
+  "keywords": [
+    "czech",
+    "cz",
+    "validation",
+    "ico",
+    "dic",
+    "rodne-cislo",
+    "birth-number",
+    "bank-account",
+    "iban",
+    "psc",
+    "cislo-uctu",
+    "validator"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "DISCLAIMER.md",
+    "SECURITY.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepare": "npm run build",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "smoke": "node scripts/smoke.mjs && node scripts/smoke.cjs",
+    "check:readme": "node scripts/check-readme.mjs",
+    "gen:data": "node scripts/gen-data.mjs",
+    "prepublishOnly": "npm run typecheck && npm run test:coverage && npm run build && npm run smoke && npm run check:readme && npm run check:legal",
+    "check:legal": "node scripts/check-legal.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^5.0.3",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "overrides": {
+    "esbuild": "^0.28.2"
+  }
+}

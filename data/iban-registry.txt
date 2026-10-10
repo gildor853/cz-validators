@@ -1,0 +1,95 @@
+# IBAN country formats: ISO 3166 code, IBAN length, BBAN structure (SWIFT notation), country name.
+# Source: SWIFT IBAN Registry, release 101 (ISO 13616 registration authority),
+#   https://www.swift.com/standards/data-standards/iban-international-bank-account-number
+# Transcribed via the machine-readable extract shipped with python-stdnum
+#   (stdnum/iban.dat, 'generated from iban-registry-v101.txt'), retrieved 2026-10-09.
+# BBAN notation: <len>!n = digits, <len>!a = upper-case letters, <len>!c = alphanumerics.
+AD 24 4!n4!n12!c Andorra
+AE 23 3!n16!n United Arab Emirates (The)
+AL 28 8!n16!c Albania
+AT 20 5!n11!n Austria
+AZ 28 4!a20!c Azerbaijan
+BA 20 3!n3!n8!n2!n Bosnia and Herzegovina
+BE 16 3!n7!n2!n Belgium
+BG 22 4!a4!n2!n8!c Bulgaria
+BH 22 4!a14!c Bahrain
+BI 27 5!n5!n11!n2!n Burundi
+BR 29 8!n5!n10!n1!a1!c Brazil
+BY 28 4!c4!n16!c Belarus
+CH 21 5!n12!c Switzerland
+CR 22 4!n14!n Costa Rica
+CY 28 3!n5!n16!c Cyprus
+CZ 24 4!n16!n Czechia
+DE 22 8!n10!n Germany
+DJ 27 5!n5!n11!n2!n Djibouti
+DK 18 4!n9!n1!n Denmark
+DO 28 4!c20!n Dominican Republic
+EE 20 2!n14!n Estonia
+EG 29 4!n4!n17!n Egypt
+ES 24 4!n4!n1!n1!n10!n Spain
+FI 18 3!n11!n Finland
+FK 18 2!a12!n Falkland Islands (Malvinas)
+FO 18 4!n9!n1!n Faroe Islands
+FR 27 5!n5!n11!c2!n France
+GB 22 4!a6!n8!n United Kingdom
+GE 22 2!a16!n Georgia
+GI 23 4!a15!c Gibraltar
+GL 18 4!n9!n1!n Greenland
+GR 27 3!n4!n16!c Greece
+GT 28 4!c20!c Guatemala
+HN 28 4!a20!n Honduras
+HR 21 7!n10!n Croatia
+HU 28 3!n4!n1!n15!n1!n Hungary
+IE 22 4!a6!n8!n Ireland
+IL 23 3!n3!n13!n Israel
+IQ 23 4!a3!n12!n Iraq
+IS 26 4!n2!n6!n10!n Iceland
+IT 27 1!a5!n5!n12!c Italy
+JO 30 4!a4!n18!c Jordan
+KW 30 4!a22!c Kuwait
+KZ 20 3!n13!c Kazakhstan
+LB 28 4!n20!c Lebanon
+LC 32 4!a24!c Saint Lucia
+LI 21 5!n12!c Liechtenstein
+LT 20 5!n11!n Lithuania
+LU 20 3!n13!c Luxembourg
+LV 21 4!a13!c Latvia
+LY 25 3!n3!n15!n Libya
+MC 27 5!n5!n11!c2!n Monaco
+MD 24 2!c18!c Moldova, Republic of
+ME 22 3!n13!n2!n Montenegro
+MK 19 3!n10!c2!n North Macedonia
+MN 20 4!n12!n Mongolia
+MR 27 5!n5!n11!n2!n Mauritania
+MT 31 4!a5!n18!c Malta
+MU 30 4!a2!n2!n12!n3!n3!a Mauritius
+NI 28 4!a20!n Nicaragua
+NL 18 4!a10!n Netherlands (The)
+NO 15 4!n6!n1!n Norway
+OM 23 3!n16!c Oman
+PK 24 4!a16!c Pakistan
+PL 28 8!n16!n Poland
+PS 29 4!a21!c Palestine, State of
+PT 25 4!n4!n11!n2!n Portugal
+QA 29 4!a21!c Qatar
+RO 24 4!a16!c Romania
+RS 22 3!n13!n2!n Serbia
+RU 33 9!n5!n15!c Russian Federation
+SA 24 2!n18!c Saudi Arabia
+SC 31 4!a2!n2!n16!n3!a Seychelles
+SD 18 2!n12!n Sudan
+SE 24 3!n16!n1!n Sweden
+SI 19 5!n8!n2!n Slovenia
+SK 24 4!n6!n10!n Slovakia
+SM 27 1!a5!n5!n12!c San Marino
+SO 23 4!n3!n12!n Somalia
+ST 25 4!n4!n11!n2!n Sao Tome and Principe
+SV 28 4!a20!n El Salvador
+TL 23 3!n14!n2!n Timor-Leste
+TN 24 2!n3!n13!n2!n Tunisia
+TR 26 5!n1!n16!c Turkiye
+UA 29 6!n19!c Ukraine
+VA 22 3!n15!n Holy See
+VG 24 4!a16!n Virgin Islands (British)
+XK 20 4!n10!n2!n Kosovo
+YE 30 4!a4!n18!c Yemen
